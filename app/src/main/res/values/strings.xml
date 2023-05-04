@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">divide_and_pay</string>
+    <string name="basket">Общая корзина (0)</string>
+    <string name="calc">Рассчет</string>
+    <string name="add_product">Добавить продукт</string>
+    <string name="general_basket">Общая корзина</string>
+</resources>

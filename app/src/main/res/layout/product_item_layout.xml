@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/menu_persons"
+        android:backgroundTint="@color/white"
+        android:text="Product"
+        android:textAlignment="textStart"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/menu_persons"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/product"
+        android:layout_alignBottom="@id/product"
+        android:layout_toStartOf="@id/remove"
+        android:backgroundTint="@color/control"
+        android:contentDescription="MENU_PERSONS"
+        android:scrollbarSize="4dp"
+        app:srcCompat="@drawable/baseline_people_alt_24" />
+
+    <ImageButton
+        android:id="@+id/remove"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/product"
+        android:layout_alignBottom="@id/product"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#DF5050"
+        android:contentDescription="REMOVE"
+        app:srcCompat="@drawable/baseline_close_24" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/person_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+</RelativeLayout>
